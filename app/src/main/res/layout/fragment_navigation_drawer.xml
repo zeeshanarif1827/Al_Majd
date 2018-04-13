@@ -1,0 +1,301 @@
+<android.support.design.widget.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.zeeshan_pc.al_majd00.ui.dashboard.fragment.NavigationDrawer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:padding="20dp">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/back_arrow"
+            android:backgroundTint="@color/blue"
+            android:background="@drawable/ic_action_arrow_back"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/person"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/blue"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/person"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:text="Al Majd Network"
+                    android:textAlignment="center"
+                    android:textColor="@color/blue"
+                    android:textSize="22sp" />
+
+
+            </LinearLayout>
+
+            <!--...........................-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:id="@+id/dashboard">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/ic_action_download_business_statistics_symbol_of_a_graphic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="2dp"
+                    android:text="Dashboard"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="7dp"
+                android:alpha="0.5"
+                android:background="@color/blue" />
+
+            <!--...........................-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:id="@+id/channels">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="-2dp"
+                    android:src="@drawable/ic_action_television" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="2dp"
+                    android:text="Channels"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="7dp"
+                android:alpha="0.5"
+                android:background="@color/blue" />
+
+            <!--...........................-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:id="@+id/live">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_action_live" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="2dp"
+                    android:text="Live Streaming"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="7dp"
+                android:alpha="0.5"
+                android:background="@color/blue" />
+
+            <!--...........................-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:id="@+id/distibutors">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_action_user_with_headset_silhouette" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="2dp"
+                    android:text="Distibutors"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="7dp"
+                android:alpha="0.5"
+                android:background="@color/blue" />
+
+            <!--...........................-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:id="@+id/aboutUs">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_action_about" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="2dp"
+                    android:text="About Us"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="7dp"
+                android:alpha="0.5"
+                android:background="@color/blue" />
+
+            <!--...........................-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="3dp"
+                android:id="@+id/logout">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:tint="@color/blue"
+                    android:src="@drawable/ic_action_logout" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/ubuntu_light"
+                    android:padding="2dp"
+                    android:text="Logout"
+                    android:textColor="@color/blue"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <!--...........................-->
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.NavigationView>
