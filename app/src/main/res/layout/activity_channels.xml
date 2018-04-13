@@ -7,7 +7,23 @@
     android:orientation="vertical"
     tools:context="com.example.zeeshan_pc.al_majd00.ui.channel.activity.ChannelsActivity">
 
-    <include layout="@layout/appbar_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/appbar_layout"/>
+
+        <ImageView
+            android:id="@+id/channelBackBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:focusable="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_action_arrow_back"
+            android:backgroundTint="@color/white"/>
+
+    </RelativeLayout>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"

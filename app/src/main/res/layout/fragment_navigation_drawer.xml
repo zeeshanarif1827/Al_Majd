@@ -257,6 +257,7 @@
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="7dp"
                 android:alpha="0.5"
+                android:visibility="gone"
                 android:background="@color/blue" />
 
             <!--...........................-->
@@ -270,6 +271,7 @@
                 android:layout_marginTop="10dp"
                 android:orientation="horizontal"
                 android:padding="3dp"
+                android:visibility="gone"
                 android:id="@+id/logout">
 
                 <ImageView

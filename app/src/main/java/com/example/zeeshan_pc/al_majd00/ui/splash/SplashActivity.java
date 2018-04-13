@@ -167,7 +167,7 @@ public class SplashActivity extends AppCompatActivity {
     void startNextActivity() {
 
         ScaleAnimation fade_in = new ScaleAnimation(0f, 1f, 0f, 1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-        fade_in.setDuration(800);     // animation duration in milliseconds
+        fade_in.setDuration(1300);     // animation duration in milliseconds
         fade_in.setFillAfter(true);    // If fillAfter is true, the transformation that this animation performed will persist when it is finished.
         imageView.startAnimation(fade_in);
 
@@ -178,45 +178,6 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationEnd(Animation animation) {
-
-                final Animation slideUp = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.slide_up);
-                slideUp.setAnimationListener(new Animation.AnimationListener() {
-                    @Override
-                    public void onAnimationEnd(Animation animation) {
-
-                        slideUp.setFillAfter(true);
-
-                        ScaleAnimation fade_in1 = new ScaleAnimation(0f, 1f, 0f, 1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-                        fade_in1.setDuration(1200);     // animation duration in milliseconds
-                        fade_in1.setFillAfter(true);    // If fillAfter is true, the transformation that this animation performed will persist when it is finished.
-
-                        fade_in1.setAnimationListener(new Animation.AnimationListener() {
-                            @Override
-                            public void onAnimationStart(Animation animation) {
-                            }
-
-                            @Override
-                            public void onAnimationEnd(Animation animation) {
-
-                            }
-
-                            @Override
-                            public void onAnimationRepeat(Animation animation) {
-
-                            }
-                        });
-
-                    }
-
-                    @Override
-                    public void onAnimationRepeat(Animation animation) {
-                    }
-
-                    @Override
-                    public void onAnimationStart(Animation animation) {
-                    }
-                });
-
                 startActivity(new Intent(SplashActivity.this, DashboardActivity.class));
             }
 
